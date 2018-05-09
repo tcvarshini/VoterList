@@ -1,0 +1,29 @@
+.nav 
+{
+   text-align: center;
+    display: inline-block;
+}
+.bg {
+  
+    background-image: url("./vote.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.boldy{
+    
+     font-weight: 800;
+    color: black;
+}
+
+.font{
+    font-family: 'Roboto Slab', serif;
+    font-size:130%;
+}
+
+.fontt{
+    font-family: 'Roboto Slab', serif;
+    font-size:100%;
+}

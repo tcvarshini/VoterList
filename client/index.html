@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge; IE=11; IE=10; IE=9; IE=8; IE=7" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MEAN CRUD</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+</head>
+<body class="bg">
+ <h1 class="text-muted font" style="font-size: 300%; " ><a href="#/">ELECTORAL ROLLS</a></h1>
+<div class="container">
+    
+	<div class="row">
+		
+        <div class="header">
+            
+           
+            <br>
+              <center>
+			<nav>
+			  <ul class="nav nav-pills pull-center">
+			    
+			         <li role="presentation" class="active" style="text-align:center;height:60px;width:180px"><a href="#/voter/create" class="font"> <span class="glyphicon glyphicon-plus" > </span>Add Voter</a></li>
+        
+                  <li role="presentation" class="active" style="text-align:center;height:60px;width:180px"><a href="#/voter" class="font"><span class="glyphicon glyphicon-th-list"> </span>Show List</a></li>
+                  
+                 <li role="presentation" class="active" style="text-align:center;height:60px;width:180px"><a href="#/voter/update" class="font"><span class="glyphicon glyphicon-repeat"> </span>Update List</a></li>
+                  
+                   <li role="presentation" class="active" style="text-align:center;height:60px;width:180px"><a href="#/voter/delete" class="font"><span class="glyphicon glyphicon-trash"> </span>Delete List</a></li>
+                </ul>
+			</nav>
+              </center>
+		</div>
+      
+        <center>
+        <div>
+		<div ng-view></div>
+		</div>
+        </center>
+           
+		
+
+	</div>
+</div>
+     
+            <footer class="footer font" style="position: fixed; right: 15; bottom: 0; align-content: center;">
+		    <p style="font-weight: bold; color: white;">© Chandana Varshini @ Miracle Software Systems</p>
+		</footer>
+       
+        
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+<script src="app.js"></script>
+<script src="controllers/controllers.js"></script>
+
+</body>
+</html>

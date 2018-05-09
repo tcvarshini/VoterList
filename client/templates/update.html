@@ -1,0 +1,31 @@
+ 
+<div class="panel panel-default font" ng-init="getVoter()" style="width: 50%; opacity: 0.8; font-weight: 600; color: black;">
+	<div class="panel-heading" style=" color: black;">
+	  <p class="panel-title font"><span style="color:#5bc0de;" 
+class="glyphicon glyphicon-list"> </span> Update List</p>
+	</div>
+	<div style="color: black;">
+		<table class="table" style="width:100%;" >
+			<thead>
+			<tr>
+			  <th>Full Name</th>
+			  <th>Voter Id</th>
+			  
+			  <th>Actions</th>
+			</tr>
+			</thead>
+			<tbody style="font-size: 15px; font-weight: lighter;">
+			<tr ng-repeat="voter in voters">
+			  <td>{{ voter.name }}</td>
+			  <td>{{ voter.vid }}</td>
+			  <td> 
+			    <a href="#/voter/{{voter._id}}/update" class="btn btn-warning btn-md"><span class="glyphicon glyphicon-edit"> </span> Edit  </a>
+			  </td>
+			</tr>
+			</tbody>
+		</table>	
+        
+    </div>
+    
+</div>
+<a href="#/" class="btn btn-default"> Go Back</a>

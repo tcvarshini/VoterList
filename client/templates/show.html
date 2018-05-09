@@ -1,0 +1,21 @@
+<div class="panel panel-default font" style="width:50%; opacity: 0.8;" ng-init="showVoter()">
+	<div class="panel-heading">
+        <p class="panel-title font" style="font-weight: 800; color: black;"> <b>Voter List Information</b></p>
+	</div>
+	<div class="panel-body" style="font-weight: 800; color: black;">
+		<form>
+		<div class="form-group">
+		 <label class="form-control">Full Name: {{ voter.name }}</label>
+		 <label class="form-control">Father Name: {{ voter.fname }}</label>
+		 <label class="form-control">DOB: {{ voter.dob }}</label>
+		 <label class="form-control">Address: {{ voter.address }}</label>
+		 <label class="form-control">Ward Number: {{ voter.wno }}</label>
+		 <label class="form-control">Voter Id: {{ voter.vid }}</label>
+             <label class="form-control">Gender: {{ voter.gender }}</label>
+             <label class="form-control">Phone Number: {{ voter.phno }}</label>
+		 <label class="form-control">ID: {{ voter._id }}</label>
+		<a href="#/voter" class="btn btn-default"> Cancel</a>
+		</div>
+	</form>		
+    </div>
+</div>

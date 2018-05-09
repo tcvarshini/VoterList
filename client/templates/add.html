@@ -1,0 +1,57 @@
+ 
+<div class="panel panel-default font" style="width:50%; opacity: 0.8;" >
+	<div class="panel-heading" style="font-weight: 800; color: black;">
+        <p class="panel-title font"><span style="color:#5bc0de;" class="glyphicon glyphicon-plus"> </span><b> Add Details</b></p>
+	</div>
+	<div class="panel-body" style="font-weight: 800; color: black;">
+           
+		<form ng-submit="addVoter()">
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" class="form-control" id="name" ng-model="voter.name" placeholder="Enter Full Name" required>
+    </div>
+    <div class="form-group">
+      <label for="id">Father Name</label>
+      <input type="text" class="form-control" id="fname" ng-model="voter.fname" placeholder="Enter Father Name" required>
+    </div>
+    <div class="form-group">
+      <label for="brand">DOB</label>
+   <input  class="form-control" id="dob" ng-model="voter.dob" type="text" name="input" placeholder="Enter date in the format YYYY-MM-DD" pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))" 
+title="Enter a date in this format YYYY-MM-DD"  required/>
+    </div>
+    <div class="form-group">
+      <label for="cat">Address</label>
+      
+        
+        <textarea rows="4" cols="50" type="text" class="form-control" id="address" ng-model="voter.address" placeholder="Permanent Address" required>
+
+</textarea>
+    </div>
+      <div class="form-group">
+      <label for="quan">Ward Number</label>
+        <input type="number" class="form-control" id="wno" ng-model="voter.wno" min="0" max="99" placeholder="Two Digit Ward Number" required>
+    </div>
+      <div class="form-group">
+      <label for="cost">Voter Id</label>
+      <input type="text" class="form-control" id="vid" ng-model="voter.vid" placeholder="Enter Valid Voter ID" required>
+    </div>
+            <div class="form-group">
+      <label for="cost">Gender</label>
+      <select ng-model="voter.gender" class="form-control" id="gender"required>
+          <option style="font-weight: lighter;" value="">Select Gender</option>  
+          <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+          </select>
+    </div>
+            <div class="form-group">
+      <label for="cost">Phone Number</label>
+      <input type="text" class="form-control" id="phno" ng-model="voter.phno" placeholder="10 Digit Valid Number" pattern="[1-9]{1}[0-9]{9}" required>
+    </div>
+    <button type="submit" style="color:#5bc0de;" class="btn btn-default">Submit</button>
+    <a href="#/" class="btn btn-default"> Cancel</a>
+            
+</form>		
+    </div>
+</div>
+<br><br><br><br><br><br><br><br><br>
